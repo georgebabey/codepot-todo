@@ -8,7 +8,15 @@ Create your first node web server!
 ```js
 var http = require('http');
 ```
-2.To create a HTTP server that listens to port 8000
+2.To create a HTTP server that listens to port 8000 with a callback function
 ```js
-http.createServer(function(request,response){}).listen(8000);
+http.createServer(function(request, response){}).listen(8000);
+```
+3.To add content to response
+```js
+response.write("contents...");
+```
+4.To send the content of the response to the client
+```js
+response.end();
 ```
