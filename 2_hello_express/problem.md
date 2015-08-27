@@ -16,7 +16,9 @@ var app = express();
 
 handle http get request on root url
 ```js
-app.get('/', function(req, res) {});
+app.get('/', function(req, res) {
+// TODO: handle request
+});
 ```
 
 listen to port 3000
