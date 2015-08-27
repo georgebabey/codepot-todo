@@ -1,28 +1,27 @@
-Create an Express.js app that responds with "Hello World!" when somebody goes to `/home`.
-
-The port number will be provided to you by {appname} as the first argument of
-the application, ie. `process.argv[2]`.
-
-Run `$ killall node`  before verifying exercises (in your terminal on Mac OS X) to end any previous processes. For Windows, use `taskkill /IM node.exe`.
+Create an Express.js app that responds with "Hello World!" when somebody make a get request to `/`(the server root).
 
 -----------------------------
 
 ## HINTS
 
-This is how we can create an Express.js app on port 3000, that responds with
-a string on `'/'`:
-
+import express module
 ```js
-var express = require('express')
-var app = express()
-app.get('/', function(req, res) {
-  res.end('Hello World!')
-})
-app.listen(3000)
+var express = require('express');
 ```
 
-Please use `process.argv[2]` instead of a fixed port number:
-
+create a app (server)
 ```js
-app.listen(process.argv[2])
+var app = express();
+```
+
+handle http get request on root url
+```js
+app.get('/', function(req, res) {
+// TODO: handle request
+});
+```
+
+listen to port 3000
+```js
+app.listen(3000);
 ```
