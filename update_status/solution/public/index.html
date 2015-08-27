@@ -11,7 +11,7 @@
     </form>
 
     <div ng-repeat="todo in todos">
-      {{todo.title}} <button ng-click="removeTodo(todo)">Delete</button>
+      <input type="checkbox" ng-model="todo.completed" ng-change="updateCompleted(todo)">{{todo.title}} <button ng-click="removeTodo(todo)">Delete</button>
     </div>
   </div>
 

@@ -11,7 +11,7 @@ angular.module('codepot-todo', [])
       };
 
       $http.post('/api/todos', newTodo).then(function(result) {
-        $scope.todos.push(result.data);
+        $scope.todos.unshift(result.data);
         $scope.newTodo = '';
       });
     };
@@ -20,5 +20,9 @@ angular.module('codepot-todo', [])
       $http.delete('/api/todos/' + todo._id).then(function() {
         $scope.todos.splice($scope.todos.indexOf(todo), 1)
       });
-    }
+    };
+
+    $scope.updateCompleted = function updateStatus(todo) {
+      $http.put('/api/todos/' + todo._id, todo);
+    };
   });

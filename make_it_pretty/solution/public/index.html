@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-framework="angularjs">
+<head>
+  <title>Angular Todo</title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <style type="text/css">
+    .strike {text-decoration:line-through;}
+  </style>
+</head>
+<body ng-app="codepot-todo">
+    <div ng-controller="TodoCtrl" class="container col-md-4 col-md-offset-4">
+    <h1 class="text-center">TODOs</h1>
+
+    <form id="todo-form" ng-submit="addTodo()">
+      <div class="form-group">
+        <input id="new-todo" class="form-control" placeholder="What needs to be done?" ng-model="newTodo" />
+      </div>
+    </form>
+
+    <div ng-repeat="todo in todos">
+      <div class="checkbox">
+        <label class="container">
+          <input type="checkbox" ng-model="todo.completed" ng-change="updateCompleted(todo)">
+          <span ng-class="{strike: todo.completed}">{{todo.title}}</span>
+          <i class="glyphicon glyphicon-remove pull-right" ng-click="removeTodo(todo)"></i>
+        </label>
+      </div>
+    </div>
+
+</div>
+
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
