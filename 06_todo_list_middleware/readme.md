@@ -1,3 +1,6 @@
+Express allows you to declare middleware - pieces of code that can read or modify the request or response, and then pass thorugh
+to the next piece of middleware. In this exercise we will use a provided middleware as well as create our own.
+
 Use the bodyParser middleware and create your first middleware to log the incoming request!
 
 -----------------------------
