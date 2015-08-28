@@ -1,4 +1,4 @@
-We now have a functional Todo List, but it sure isn't pretty. Add some styles to jazz it up!
+We now have a functional TODO app, but it sure isn't pretty. Add some styles to jazz it up!
 
 -----------------------------
 
