@@ -4,6 +4,17 @@ Create an Express.js app that responds with "Hello World!" when somebody make a 
 
 ## HINTS
 
+create a package.json file and use 'npm install'
+```
+{
+  "name": "codepot-todo",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
+```
+
 import express module
 ```js
 var express = require('express');
