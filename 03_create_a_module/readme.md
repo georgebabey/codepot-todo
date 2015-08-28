@@ -1,3 +1,5 @@
+NodeJS lets you easily encapsulate and share code as modules. In this exercise we will create our own module!
+
 Create a string repeat module that has a repeat function and use it to say hello world twice!
 The repeat function takes in a string then return that repeated 2 times. ("Hello World!" -> "Hello World!Hello World!")
 Import the module and use it in your web server.
