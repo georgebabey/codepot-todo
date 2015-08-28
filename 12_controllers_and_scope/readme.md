@@ -2,7 +2,7 @@ The previous exercise used Angular's two-way data-binding without having to decl
 created a controller and added the name to the controller's scope when the text input changed.
 
 In this exercise we will create a new javascript file in our public directory to write our angular code.
-This file will declare a new module (Angular's way of code isolation) ```codepot-todo``` and controller ```TodoCtrl``` so that we can display the client's time of day when the page was loaded.
+This file will declare a new module (Angular's way of code isolation) ```codepot-todo``` and controller ```TodoCtrl```. The controller's method will get run when the page is first loaded; Lets add the current time of day to the scope and display this in the html.
 
 Be sure to apply the module ```ng-app="codepot-todo"``` and controller ```ng-controller="TodoCtrl"`` to elements on the html page so they will be loaded
 
