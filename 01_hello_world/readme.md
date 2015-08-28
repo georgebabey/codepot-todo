@@ -1,3 +1,5 @@
+#TODO
+
 Write a program that prints the text "HELLO WORLD" to the console (stdout).
 
 ----------------------------------------------------------------------
@@ -10,18 +12,8 @@ To make a Node.js program, create a new file with a `.js` extension and start wr
 $ node program.js
 ```
 
-You can write to the console in the same way as in the browser:
+You can write to the file in the same way as in the console:
 
 ```js
 console.log("text")
 ```
-
-When you are done, you must run:
-
-```sh
-$ {appname} verify program.js
-```
-
-to proceed. Your program will be tested, a report will be generated, and the lesson will be marked 'completed' if you are successful.
-
-----------------------------------------------------------------------
