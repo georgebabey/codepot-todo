@@ -28,7 +28,7 @@ Todo.findOneAndRemove({_id: id}, function(err, todo) {
 })
 
 //update a todo by id
-Todo.findOneAndUpdate({_id: id}, function(err, todo) {
+Todo.findOneAndUpdate({_id: id}, { title = '...' }, function(err, todo) {
     // to be implemented
 })
 ```
