@@ -8,7 +8,7 @@ Import the module and use it in your web server.
 
 ## HINTS
 
-1.To create a module
+1.To create a module: make a new js file and add following code. It gives you a module with an empty repeat function.
 ```js
 module.exports = {
     repeat: function() {},
