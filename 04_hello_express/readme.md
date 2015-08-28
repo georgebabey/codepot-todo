@@ -1,4 +1,4 @@
-Creating a webserver in NodeJS was easy, but [ExpressJS](http://expressjs.com/) makes it even easier!
+Creating a webserver in NodeJS was easy, but [Express](http://expressjs.com/) makes it even easier!
 
 Create an Express.js app that responds with "Hello World!" when somebody make a get request to `/`(the server root).
 
